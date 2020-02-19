@@ -9,7 +9,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import ml.bootcode.awesomeuserservice.dtos.UserDto;
+import ml.bootcode.dtos.UserDto;
 
 /**
  * @author sunnyb
@@ -18,7 +18,7 @@ import ml.bootcode.awesomeuserservice.dtos.UserDto;
 @RestController
 public class UserController {
 
-	@GetMapping("users")
+	@GetMapping
 	public List<UserDto> getUsers() {
 
 		List<UserDto> list = new ArrayList<>();

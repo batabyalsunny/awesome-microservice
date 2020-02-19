@@ -15,11 +15,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>awesome-app</name>
-	
+
 	<modules>
+		<module>core-module</module>
 		<module>awesome-registry-service</module>
+		<module>awesome-getway-service</module>
 		<module>awesome-user-service</module>
 		<module>awesome-cab-service</module>
 	</modules>
-	
+
 </project>

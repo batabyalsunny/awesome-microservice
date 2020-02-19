@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: awesome-getway-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8181/eureka/
+      
+server:
+  port: 8180
+  
+zuul:
+  prefix: /api/v1
+  routes:
+    user-service: 
+      path: /users/**
+      service-id: awesome-user-service
+    cab-service:
+      path: /cabs/**
+      service-id: awesome-cab-service

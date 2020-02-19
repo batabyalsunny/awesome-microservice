@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import ml.bootcode.awesomecabservice.dtos.UserDto;
+import ml.bootcode.dtos.UserDto;
 
 /**
  * @author sunnyb
  *
  */
-@RequestMapping("cab/owners")
+@RequestMapping("owners")
 @RestController
 public class CabOwnerController {
 
@@ -33,7 +33,7 @@ public class CabOwnerController {
 	@GetMapping("rest")
 	public List<UserDto> getThroughRestTemplate() {
 
-		UserDto[] users = restTemplate.getForObject("http://awesome-user-service/users", UserDto[].class);
+		UserDto[] users = restTemplate.getForObject("http://awesome-user-service/", UserDto[].class);
 		return Arrays.asList(users);
 	}
 

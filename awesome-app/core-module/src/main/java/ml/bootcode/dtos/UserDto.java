@@ -1,4 +1,4 @@
-package ml.bootcode.awesomecabservice.dtos;
+package ml.bootcode.dtos;
 
 /**
  * @author sunnyb
