@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: awesome-user-service
+    
+server:
+  port: 8182
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8181/eureka/
