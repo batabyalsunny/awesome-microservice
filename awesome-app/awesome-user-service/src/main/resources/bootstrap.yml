@@ -1,6 +1,11 @@
 spring:
   application:
     name: awesome-user-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: awesome-config-service
     
 server:
   port: 8182
